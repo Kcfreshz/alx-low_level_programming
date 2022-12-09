@@ -1,22 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - prints the size of many var types
- *
- * Return: Always 0 (Success)
+ * main - prints the size of varous types
+ * Return: 0 if exited properly, non-zero otherwise
  */
+
 int main(void)
 {
-	int a;
-	long int b;
-	long long int c;
-	char d;
-	float f;
-
-	printf("Size of a char: %1u byte(s)\n", (unsigned long)sizeof(d));
-	printf("Size of an int: %1u byte(s)\n", (unsigned long)sizeof(a));
-	printf("Size of a long int: %1u byte(s)\n", (unsigned long)sizeof(b));
-	prinf("Size of a long long int: %1u byte(s)\n", (unsigned long)sizeof(c));
-	printf("Size of a float: %1u byte(s)\n", (unsigned long)sizeof(f));
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(longint));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
 	return (0);
 }
