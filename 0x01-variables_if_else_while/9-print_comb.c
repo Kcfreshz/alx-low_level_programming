@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <9-print_comb.c>
 
 /**
  * main - print all possible combination of single-digit numbers.
