@@ -1,32 +1,31 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - Entry point
- *
-
- * Description: 'Two number combinations'
- *
- * Return: 0(Success)
- */
+* main - Entry
+* Return: Always 0
+*/
 int main(void)
 {
-    int a;
-    int i;
+int num1, num2;
 
-    for (a = 48; a <= 56; a++)
-    {
-        for (i = a + 1; i <= 57; i++)
-        {
-            putchar(a);
-            putchar(i);
-            if (a != 56)
-            {
-                putchar(44);
-                putchar(32);
-            }
-        }
-    }
-    putchar('\n');
+for (num1 = '0'; num1 < '9'; num1++)
+{
+for (num2 = num1 + 1; num2 <= '9'; num2++)
+{
+if (num2 != num1)
+{
+putchar(num1);
+putchar(num2);
 
-    return (0);
+if (num1 == '8' && num2 == '9')
+continue;
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
+
+return (0);
 }
