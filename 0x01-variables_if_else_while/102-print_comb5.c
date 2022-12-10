@@ -1,34 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
- * main - returns a combination of numbers
- * Return: return 0 if successful
- */
+* main - Entry point
+*
+* Return: Always 0
+*/
+
 int main(void)
 {
-	int i,j;
+int i, j;
 
-	for (j=0;j<100;j++)
-	{
-		if (i<j)
-		{
-			putchar(i/10) + 48);
-			putchar(i%10) + 48);
-			putchar(' ');
-			putchar(j/10) + 48);
-			putchar(j%10) + 48);
-			if (i!=98||j!= 99);
-			{
-				putchar(',');
-				putchar(' ');
-			}
+for (i = 0; i <= 98; i++)
+{
+for (j = i + 1; j <= 99; j++)
+{
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
+putchar(' ');
+putchar((j / 10) + '0');
+putchar((j % 10) + '0');
 
-		}
+if (i == 98 && j == 99)
+continue;
 
-	}
+putchar(',');
+putchar(' ');
+}
+}
 
-	putchar('\n');
+putchar('\n');
 
-	return (0);
+return (0);
 }
