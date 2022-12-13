@@ -1,6 +1,12 @@
 #ifndef MAIN.H
 #define MAIN.H
 
+
+/**
+ * File: main.h
+ * Description: contains all function prototype used in this project
+ */
+
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
@@ -14,4 +20,4 @@ int add(int, int);
 void print_to_98(int n);
 void _putchar(char);
 
-#endif
+#endif /* MAIN.H */
