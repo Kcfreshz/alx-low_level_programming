@@ -1,9 +1,12 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
- * main - prints _putchar and a new line
- * Return: Always 0
+ * main - Check description
+ * Description: Program that prints _putchar, followed by a new line
+ * Return: 0
  */
+
 int main(void)
 {
 	_putchar('_');
