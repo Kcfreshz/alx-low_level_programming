@@ -8,16 +8,8 @@
 
 int _isalpha(int c)
 {
-	char la_up, la_low;
-	int isAlpha = 0;
-
-	for (la_up = 'A'; la_up <= 'Z'; la_up++)
-	{
-		for (la_low = 'a'; la_low = 'z'; la_low++)
-		{
-			if (c == la_low || c == la_up)
-				isAlpha = 1;
-		}
-	}
-	return (isAlpha);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
