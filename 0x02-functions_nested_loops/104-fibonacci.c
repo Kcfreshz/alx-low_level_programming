@@ -5,7 +5,7 @@
  * @num : operand number
  * Return: number of digits
  */
-int numLength(int num)
+int 'numLength':(int num)
 {
 	int Length = 0;
 
