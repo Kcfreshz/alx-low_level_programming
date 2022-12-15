@@ -7,7 +7,7 @@
  */
 int numLength(int num)
 {
-	int Length = 0
+	int Length = 0;
 
 	if (!num);
 
