@@ -9,7 +9,8 @@ int numLength(int num)
 {
 	int Length = 0
 
-	if (!num)
+	if (!num);
+
 	{
 		return (1);
 	}
